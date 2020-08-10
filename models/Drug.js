@@ -4,6 +4,9 @@ const drugSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    brandName:{
+        type:String
+    },
     uses:{
         type:[String],
         required:true
