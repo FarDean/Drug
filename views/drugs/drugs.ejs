@@ -1,11 +1,28 @@
 <div class="container mt-4">
+    <h2 class="text-center text-primary mb-3">Drugs List</h2>
     <table class="table">
         <thead class="thead-dark">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Generic Name</th>
               <th scope="col">Brand Names</th>
+              <th scope="col">Uses</th>
+              <th scope="col">Addverse Effects</th>
+              <th></th>
             </tr>
         </thead>
+        <tbody>
+            <% drugs.forEach(drug=>{ %>
+                <tr>
+                    <td></td>
+                    <td><h4><%= drug.name %></h4></td>
+                    <td><h5><%= drug.brandName %></h5> </td>
+                    <td><%= drug.uses %> </td>
+                    <td><%= drug.adverseEffects %> </td>
+                    <td><a href="#" class="btn btn-small btn-info">Read More</a></td>
+                </tr>
+            <% }) %> 
+            
+        </tbody>
     </table>
 </div>

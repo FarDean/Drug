@@ -1,14 +1,14 @@
 <div class="form-row">
     <div class="form-group col-md-6">
       <label for="name">Name</label>
-      <input type="text" name="name" class="form-control" value="<%= drug.name  %> ">
+      <input required type="text" name="name" class="form-control" value="<%= drug.name  %>">
     </div>
     <div class="form-group col-md-6">
       <label for="brand">Brand Name</label>
-      <input type="text" name="brand" class="form-control" value="<%= drug.brand  %> ">
+      <input type="text" name="brand" class="form-control" value="<%= drug.brandName  %>">
     </div>
   </div>
   <label for="uses mb-3">Uses</label>
-  <textarea class="form-control mb-2" name="uses" ></textarea>
+  <textarea class="form-control mb-2" name="uses" ><%= drug.uses %> </textarea>
   <label for="adverseEffects mb-3">Adverse Effects</label>
-  <textarea class="form-control mb-5" name="adverseEffects"></textarea>
+  <textarea class="form-control mb-5" name="adverseEffects"><%= drug.adverseEffects %></textarea>

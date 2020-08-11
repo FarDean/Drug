@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.set('layout','layouts/layout');
 app.use(express.static('public'));
-
+app.use(express.urlencoded({extended:false}))
 mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true,useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
