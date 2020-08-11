@@ -1,3 +1,5 @@
 <div class="container mt-5 text-capitalize">
     <h2><%= drug.name %> </h2>
+    <%- drug.sanitizedHtml %>
+    <a href="/drugs/edit/<%= drug.id %>" class="btn btn-secondary">Edit</a>
 </div>

@@ -1,0 +1,8 @@
+<div class="container">
+    <h2 class="text-center mt-4">Edit </h2>
+    <form action="/drugs/<%= drug.id %>?_method=PUT" method="POST">
+          <%- include('./_form_fields.ejs')  %> 
+          <button type="submit" class="btn btn-success">Edit</button>
+          <a href="/drugs/<%= drug.id %>" class="btn btn-danger">Cancel</a>
+    </form>
+</div>

@@ -9,6 +9,7 @@
               <th scope="col">Uses</th>
               <th scope="col">Addverse Effects</th>
               <th></th>
+              <th></th>
             </tr>
         </thead>
         <tbody>
@@ -19,7 +20,12 @@
                     <td><h5><%= drug.brandName %></h5> </td>
                     <td><%= drug.uses %> </td>
                     <td><%= drug.adverseEffects %> </td>
-                    <td><a href="#" class="btn btn-small btn-info">Read More</a></td>
+                    <td><a href="/drugs/<%= drug.id %> "  class="btn btn-info">Read More</a></td>
+                    <td>
+                        <form action="/drugs/<%= drug.id %>?_method=DELETE" method="POST">
+                            <button type="submit" class="btn btn-danger btn-small">Delete</button>
+                        </form>
+                    </td>
                 </tr>
             <% }) %> 
             

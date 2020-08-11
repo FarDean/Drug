@@ -7,8 +7,10 @@
       <label for="brand">Brand Name</label>
       <input type="text" name="brand" class="form-control" value="<%= drug.brandName  %>">
     </div>
-  </div>
+</div>
   <label for="uses mb-3">Uses</label>
   <textarea class="form-control mb-2" name="uses" ><%= drug.uses %> </textarea>
   <label for="adverseEffects mb-3">Adverse Effects</label>
   <textarea class="form-control mb-5" name="adverseEffects"><%= drug.adverseEffects %></textarea>
+  <label for="markdown mb-3">Markdown</label>
+  <textarea class="form-control mb-5" name="markdown"><%= drug.markdown %></textarea>
